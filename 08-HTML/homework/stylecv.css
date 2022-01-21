@@ -1,0 +1,13 @@
+body {
+    background-color: grey;}
+
+.item {
+    width: 300px;
+    background-color: honeydew;
+    margin: 50px;
+}
+
+#id {
+    width: 600px;
+
+}
