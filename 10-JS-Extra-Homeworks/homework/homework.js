@@ -10,6 +10,7 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  return Object.entries(objeto)
 }
 
 
@@ -26,7 +27,20 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  
+let mayus = '';
+let mins = '';
+let letra 
+for(var i=0; i<s.length; i++){
+  letra = s[i];
+    if(letra>='A' && letra<='Z'){
+    mayus += letra
+} else{
+  mins += letra
 }
+} return (mayus + mins)
+}
+
 
 
 function asAmirror(str) {
