@@ -10,6 +10,7 @@ img {
     background-color: brown;
     padding: 50px; 
     border: 5px solid chartreuse;
+    margin-top: 10px;
 }
 #spanId {
     font-size: 18px;
@@ -17,4 +18,7 @@ img {
 }
 body {
     background-image: url('https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg');
+}
+.divClass {
+    background-color: grey;
 }
