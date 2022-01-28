@@ -78,7 +78,7 @@ function asAmirror(str) {
   //}
 
   return str.split(' ').map(function(palabra){
-    return palabra.split('').reverse.join();
+    return palabra.split('').reverse().join('');
   }).join(' ');
 } 
 
@@ -88,6 +88,10 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  numero=numero.toString();
+  numero2=numero.split('').reverse().join('');
+  if(numero===numero2) return "Es capicua";
+  else return 'No es capicua';
 }
 
 
@@ -108,12 +112,10 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
-  arr.sort(comparacion)
-
-  function comparacion (a, b){
+  newarray = arr.sort(function comparacion (a, b){
     return a.length - b.length;
-  }
-  console.log(arr)
+  })
+  return newarray 
 //chequear por que el test no me lo toma pero la consola si.
   }
 
@@ -128,10 +130,10 @@ function buscoInterseccion(arreglo1, arreglo2){
   for(i=0; i<arreglo1.length; i++){
     for(j=0; j<arreglo2.length; j++){
       if(arreglo1[i]===arreglo2[j]){
-        valor = arreglo2[j];
+       newArr.push(arreglo1[i]);
       }
-    } newArr.push(valor);
-  } return newArr
+    } 
+  } return newArr;
 }
 
 
